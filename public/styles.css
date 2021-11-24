@@ -1,0 +1,49 @@
+/* empty component style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+  
+body {
+    background: #eee;
+    padding: 0 16px;
+} 
+
+h1 {
+    font-size: 1.5rem;
+}
+  
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+  
+header h1 {
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+/* Class */
+.bnm-logo {
+    filter: invert(100%);
+    width: 40px;
+    display: flex;
+    padding-right: 10px;
+}
+
+.bank-name {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
