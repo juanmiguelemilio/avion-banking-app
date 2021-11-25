@@ -14,36 +14,62 @@ body {
     padding: 0 16px;
 } 
 
-h1 {
-    font-size: 1.5rem;
-}
-  
-header {
+/* NAVBAR STARTS HERE */
+.navbar {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: top;
     background-color: black;
     margin: auto -16px;
-    padding: 16px 32px;
+    padding: 15px 30px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-}
-  
-header h1 {
-    color: #fff;
-    font-family: "Montserrat";
-    font-weight: 500;
+    width: 20vw;
+    height: 100vh;
+    flex-direction: column;
 }
 
-/* Class */
+.inner-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+
 .bnm-logo {
     filter: invert(100%);
     width: 40px;
-    display: flex;
-    padding-right: 10px;
+    height: 40px;
 }
 
-.bank-name {
-    font-size: 1.5rem;
+.bank-of {
+    font-size: 2rem;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
+    padding-left: 5px;
 }
+
+.navmenu {
+    /* background-color: green; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+  
+ul a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+
+}
+/* NAVBAR ENDS HERE */
