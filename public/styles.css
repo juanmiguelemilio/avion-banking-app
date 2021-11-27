@@ -1,75 +1,85 @@
-/* empty component style */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-html {
     font-family: "Montserrat", sans-serif;
-}
-  
-body {
-    background: #eee;
-    padding: 0 16px;
-} 
-
-/* NAVBAR STARTS HERE */
-.navbar {
-    display: flex;
-    justify-content: left;
-    align-items: top;
-    background-color: black;
-    margin: auto -16px;
-    padding: 15px 30px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    width: 20vw;
-    height: 100vh;
-    flex-direction: column;
+    overflow: hidden;
 }
 
-.inner-navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
+.bnm-wordmark {
+    font-weight: 600;
+    vertical-align: middle;
+    padding-left: 5px;
+    color: white;
 }
 
 .bnm-logo {
     filter: invert(100%);
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
-.bank-of {
-    font-size: 2rem;
-    color: white;
-    font-weight: 600;
-    padding-left: 5px;
+/* NAVBAR STARTS HERE */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
 }
 
-.navmenu {
-    /* background-color: green; */
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-}
-  
-ul a {
-    display: flex;
+.navlink {
+    margin: 10px;
     text-decoration: none;
     color: white;
-    padding: 10px;
-    font-size: 20px;
 }
 
-a:hover {
-    background-color: white;
-    color: black;
-
+.navlink:hover {
+    color: gold;
 }
+
+.active {
+    color: gold;
+}
+
 /* NAVBAR ENDS HERE */
+
+/* DASHBOARD STARTS HERE */
+.main-dash {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dashboard {
+    width: 50vw;
+    height: 100vh;
+    text-align: justify;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding-bottom: 50px;
+}
+
+.dashboard2 {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardblack {
+    width: 80%;
+    padding: 10px;
+}
+
+/* DASHBOARD ENDS HERE */
+

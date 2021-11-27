@@ -1,0 +1,90 @@
+import React from "react";
+import logo from "../assets/bnmlogo.svg";
+// import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+// import Dashboard from "./Dashboard";
+// import Client from "./Client";
+// import NewClient from "./NewClient";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+
+export default function Navbar2() {
+    // return <div className="container">
+        {/* <div className="inner-navbar">
+            <img className="bnm-logo" src={logo} alt="bnm logo" />
+            <span className="bank-of">BNM</span>
+        </div> */}
+        {/* <div className="navmenu">
+            <ul>
+                <a href="/"><i class="fas fa-university fa-fw"></i>Dashboard</a>
+                <a href="/"><i class="fas fa-users fa-fw"></i>Client List</a>
+                <a href="/"><i class="fas fa-user fa-fw"></i>New Client</a>
+                <a href="/"><i class="fas fa-arrow-up fa-fw"></i>Deposit</a>
+                <a href="/"><i class="fas fa-arrow-down fa-fw"></i>Withdraw</a>
+                <a href="/"><i class="fas fa-exchange-alt fa-fw"></i>Transfer</a>
+                <a href="/"><i class="fas fa-file-alt fa-fw"></i>Transaction History</a>
+            </ul>
+        </div> */}
+        {/* <Router>
+            <div className="navmenu">
+                <nav>
+                <ul>
+                    <li>
+                    <Link to="/Dashboard"><i class="fas fa-university fa-fw"></i>Dashboard</Link>
+                    </li>
+                    <li>
+                    <Link to="/Client"><i class="fas fa-users fa-fw"></i>Client</Link>
+                    </li>
+                    <li>
+                    <Link to="/NewClient"><i class="fas fa-user fa-fw"></i>New Client</Link>
+                    </li>
+                    <li>
+                    <Link to="/Deposit"><i class="fas fa-arrow-up fa-fw"></i>Deposit</Link>
+                    </li>
+                    <li>
+                    <Link to="/Withdraw"><i class="fas fa-arrow-down fa-fw"></i>Withdraw</Link>
+                    </li>
+                    <li>
+                    <Link to="/Transfer"><i class="fas fa-exchange-alt fa-fw"></i>Transfer</Link>
+                    </li>
+                    <li>
+                    <Link to="/Transaction"><i class="fas fa-file-alt fa-fw"></i>Transaction History</Link>
+                    </li>
+                </ul>
+                </nav>
+                <Routes>
+                    <Route path="/Dashboard" element={<Dashboard />}></Route>
+                    <Route path="/Client" element={<Client />}></Route>
+                    <Route path="/NewClient" element={<NewClient />}></Route>
+                </Routes>
+                
+            </div>
+        </Router> */}
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Container>
+            <Navbar.Brand href="#home"><img className="bnm-logo" src={logo} alt="bnm logo" /><span class="bnm-wordmark">BNM</span></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+                <Nav.Link href="#Dashboard">Features</Nav.Link>
+                <Nav.Link href="#pricing">Pricing</Nav.Link>
+                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </NavDropdown>
+                </Nav>
+
+                <Nav>
+                <Nav.Link href="#deets">Sign In</Nav.Link>
+                </Nav>
+
+            </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    // </div>
+}
+
+// export default Navbar;  
