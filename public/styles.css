@@ -56,11 +56,12 @@
     width: 50vw;
     height: 100vh;
     text-align: justify;
-    padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 h2 {
@@ -76,10 +77,40 @@ h2 {
     align-items: center;
 }
 
+.bankname-styling {
+    color: gold;
+    font-weight: 600;
+}
+
 .cardblack {
     width: 80%;
     padding: 10px;
 }
-
 /* DASHBOARD ENDS HERE */
+.client, .newclient, .transact, .transactionhistory, .signin {
+    width: 50vw;
+    height: 100vh;
+    text-align: justify;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CLIENT STARTS HERE */
+
+
+/* CLIENT ENDS HERE */
+
+/* FOOTER STARTS HERE */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+/* FOOTER ENDS HERE */
 
