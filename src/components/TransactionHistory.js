@@ -1,7 +1,7 @@
 import React from "react";
 
 // TRANSACTION HISTORY
-function TransactionHistory() {
+export default function TransactionHistory() {
   return (
     <div>
       <div className="transactionhistory">
@@ -13,5 +13,3 @@ function TransactionHistory() {
     </div>
   );
 }
-
-export default TransactionHistory;

@@ -10,6 +10,7 @@ import Client from "./Client";
 import NewClient from "./NewClient";
 import Transact from "./Transact";
 import TransactionHistory from "./TransactionHistory";
+// import SignIn from "./SignIn";
 import Footer from "./Footer";
 
 
@@ -40,7 +41,7 @@ function App() {
         <Route path="newclient" element={<NewClient />} />
         <Route path="transact" element={<Transact />} />
         <Route path="transactionhistory" element={<TransactionHistory />} />
-        <Route path="signin" element={<SignIn />} />
+        {/* <Route path="signin" element={<SignIn />} /> */}
       </Routes>
 
       <Dashboard />
@@ -48,21 +49,8 @@ function App() {
       <NewClient />
       <Transact />
       <TransactionHistory />
+      {/* <SignIn /> */}
       <Footer />
-    </div>
-  );
-}
-
-// SIGN IN / LOG OUT
-function SignIn() {
-  return (
-    <div>
-      <div className="signin">
-        <h2>Have a great day!</h2>
-      </div>
-      <div>
-        
-      </div>
     </div>
   );
 }

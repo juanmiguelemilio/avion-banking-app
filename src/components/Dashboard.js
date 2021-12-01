@@ -3,7 +3,7 @@ import cardblack from "../assets/Front - Black.png"
 
 
 // DASHBOARD
-function Dashboard() {
+export default function Dashboard() {
   return (
     <>
       <main className="main-dash">
@@ -18,5 +18,3 @@ function Dashboard() {
     </>
   );
 }
-
-export default Dashboard;
